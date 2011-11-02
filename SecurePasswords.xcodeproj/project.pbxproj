@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043375EB1364606B00DE80F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043375EA1364606B00DE80F7 /* UIKit.framework */; };
+		043375ED1364606B00DE80F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043375EC1364606B00DE80F7 /* Foundation.framework */; };
+		043375EF1364606B00DE80F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043375EE1364606B00DE80F7 /* CoreGraphics.framework */; };
+		043375F51364606B00DE80F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 043375F31364606B00DE80F7 /* InfoPlist.strings */; };
+		043375F81364606B00DE80F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043375F71364606B00DE80F7 /* main.m */; };
+		043375FB1364606B00DE80F7 /* SecurePasswordsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043375FA1364606B00DE80F7 /* SecurePasswordsAppDelegate.m */; };
+		043375FE1364606B00DE80F7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043375FC1364606B00DE80F7 /* MainWindow.xib */; };
+		043376011364606B00DE80F7 /* PasswordListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043376001364606B00DE80F7 /* PasswordListController.m */; };
+		0433760D136460DB00DE80F7 /* MasterPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433760B136460DB00DE80F7 /* MasterPasswordController.m */; };
+		0433760E136460DB00DE80F7 /* MasterPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0433760C136460DB00DE80F7 /* MasterPasswordController.xib */; };
+		0484C05613655BD4002E9D39 /* Site.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484C05513655BD4002E9D39 /* Site.m */; };
+		0484C05A13655DA7002E9D39 /* SiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484C05813655DA7002E9D39 /* SiteDetailViewController.m */; };
+		0484C05B13655DA7002E9D39 /* SiteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484C05913655DA7002E9D39 /* SiteDetailViewController.xib */; };
+		0487015F136596DB0071C1E3 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 04870155136596DB0071C1E3 /* ioapi.c */; };
+		04870160136596DB0071C1E3 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 04870157136596DB0071C1E3 /* mztools.c */; };
+		04870161136596DB0071C1E3 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 04870159136596DB0071C1E3 /* unzip.c */; };
+		04870162136596DB0071C1E3 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0487015B136596DB0071C1E3 /* zip.c */; };
+		04870163136596DB0071C1E3 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0487015E136596DB0071C1E3 /* ZipArchive.mm */; };
+		04870166136597BE0071C1E3 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04870165136597BE0071C1E3 /* libz.1.2.3.dylib */; };
+		04870168136599B80071C1E3 /* SecurePasswords.zip in Resources */ = {isa = PBXBuildFile; fileRef = 04870167136599B80071C1E3 /* SecurePasswords.zip */; };
+		04925B6C136BB5D800E1729B /* Padlock_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 04925B6B136BB5D800E1729B /* Padlock_small.png */; };
+		049276F313756DF4007F88C7 /* iTunesMetadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049276F213756DF4007F88C7 /* iTunesMetadata.plist */; };
+		04C4053D13666E9700E63E4D /* NSMutableString+XMLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4053813666E9700E63E4D /* NSMutableString+XMLEncoding.m */; };
+		04C4053E13666E9700E63E4D /* NSString+XMLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4053A13666E9700E63E4D /* NSString+XMLEncoding.m */; };
+		04C4053F13666E9700E63E4D /* NSString_XMLEncodingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4053C13666E9700E63E4D /* NSString_XMLEncodingAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		043375E61364606B00DE80F7 /* SecurePasswords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurePasswords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043375EA1364606B00DE80F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		043375EC1364606B00DE80F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		043375EE1364606B00DE80F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		043375F21364606B00DE80F7 /* SecurePasswords-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecurePasswords-Info.plist"; sourceTree = "<group>"; };
+		043375F41364606B00DE80F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		043375F61364606B00DE80F7 /* SecurePasswords-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecurePasswords-Prefix.pch"; sourceTree = "<group>"; };
+		043375F71364606B00DE80F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		043375F91364606B00DE80F7 /* SecurePasswordsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurePasswordsAppDelegate.h; sourceTree = "<group>"; };
+		043375FA1364606B00DE80F7 /* SecurePasswordsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurePasswordsAppDelegate.m; sourceTree = "<group>"; };
+		043375FD1364606B00DE80F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		043375FF1364606B00DE80F7 /* PasswordListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordListController.h; sourceTree = "<group>"; };
+		043376001364606B00DE80F7 /* PasswordListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordListController.m; sourceTree = "<group>"; };
+		0433760A136460DB00DE80F7 /* MasterPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterPasswordController.h; sourceTree = "<group>"; };
+		0433760B136460DB00DE80F7 /* MasterPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterPasswordController.m; sourceTree = "<group>"; };
+		0433760C136460DB00DE80F7 /* MasterPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterPasswordController.xib; sourceTree = "<group>"; };
+		0484C05413655BD4002E9D39 /* Site.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Site.h; path = SecurePasswords.xcodeproj/Site.h; sourceTree = SOURCE_ROOT; };
+		0484C05513655BD4002E9D39 /* Site.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Site.m; path = SecurePasswords.xcodeproj/Site.m; sourceTree = SOURCE_ROOT; };
+		0484C05713655DA7002E9D39 /* SiteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteDetailViewController.h; sourceTree = "<group>"; };
+		0484C05813655DA7002E9D39 /* SiteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteDetailViewController.m; sourceTree = "<group>"; };
+		0484C05913655DA7002E9D39 /* SiteDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteDetailViewController.xib; sourceTree = "<group>"; };
+		04870154136596DB0071C1E3 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		04870155136596DB0071C1E3 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		04870156136596DB0071C1E3 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		04870157136596DB0071C1E3 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		04870158136596DB0071C1E3 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		04870159136596DB0071C1E3 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		0487015A136596DB0071C1E3 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		0487015B136596DB0071C1E3 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		0487015C136596DB0071C1E3 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		0487015D136596DB0071C1E3 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		0487015E136596DB0071C1E3 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		04870165136597BE0071C1E3 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		04870167136599B80071C1E3 /* SecurePasswords.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = SecurePasswords.zip; sourceTree = "<group>"; };
+		04925B6B136BB5D800E1729B /* Padlock_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Padlock_small.png; sourceTree = "<group>"; };
+		049276F213756DF4007F88C7 /* iTunesMetadata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iTunesMetadata.plist; sourceTree = "<group>"; };
+		04C4053713666E9700E63E4D /* NSMutableString+XMLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+XMLEncoding.h"; sourceTree = "<group>"; };
+		04C4053813666E9700E63E4D /* NSMutableString+XMLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+XMLEncoding.m"; sourceTree = "<group>"; };
+		04C4053913666E9700E63E4D /* NSString+XMLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLEncoding.h"; sourceTree = "<group>"; };
+		04C4053A13666E9700E63E4D /* NSString+XMLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLEncoding.m"; sourceTree = "<group>"; };
+		04C4053B13666E9700E63E4D /* NSString_XMLEncodingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_XMLEncodingAppDelegate.h; sourceTree = "<group>"; };
+		04C4053C13666E9700E63E4D /* NSString_XMLEncodingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_XMLEncodingAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043375E31364606B00DE80F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04870166136597BE0071C1E3 /* libz.1.2.3.dylib in Frameworks */,
+				043375EB1364606B00DE80F7 /* UIKit.framework in Frameworks */,
+				043375ED1364606B00DE80F7 /* Foundation.framework in Frameworks */,
+				043375EF1364606B00DE80F7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043375DB1364606A00DE80F7 = {
+			isa = PBXGroup;
+			children = (
+				04C4053613666E9700E63E4D /* XMLEncoding */,
+				04870165136597BE0071C1E3 /* libz.1.2.3.dylib */,
+				04870152136596DB0071C1E3 /* ZipArchive */,
+				043375F01364606B00DE80F7 /* SecurePasswords */,
+				043375E91364606B00DE80F7 /* Frameworks */,
+				043375E71364606B00DE80F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		043375E71364606B00DE80F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043375E61364606B00DE80F7 /* SecurePasswords.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043375E91364606B00DE80F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				043375EA1364606B00DE80F7 /* UIKit.framework */,
+				043375EC1364606B00DE80F7 /* Foundation.framework */,
+				043375EE1364606B00DE80F7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		043375F01364606B00DE80F7 /* SecurePasswords */ = {
+			isa = PBXGroup;
+			children = (
+				0484C05713655DA7002E9D39 /* SiteDetailViewController.h */,
+				0484C05813655DA7002E9D39 /* SiteDetailViewController.m */,
+				049276F213756DF4007F88C7 /* iTunesMetadata.plist */,
+				0484C05913655DA7002E9D39 /* SiteDetailViewController.xib */,
+				0484C05413655BD4002E9D39 /* Site.h */,
+				0484C05513655BD4002E9D39 /* Site.m */,
+				043375F91364606B00DE80F7 /* SecurePasswordsAppDelegate.h */,
+				043375FA1364606B00DE80F7 /* SecurePasswordsAppDelegate.m */,
+				043375FC1364606B00DE80F7 /* MainWindow.xib */,
+				043375FF1364606B00DE80F7 /* PasswordListController.h */,
+				043376001364606B00DE80F7 /* PasswordListController.m */,
+				0433760A136460DB00DE80F7 /* MasterPasswordController.h */,
+				0433760B136460DB00DE80F7 /* MasterPasswordController.m */,
+				0433760C136460DB00DE80F7 /* MasterPasswordController.xib */,
+				043375F11364606B00DE80F7 /* Supporting Files */,
+			);
+			path = SecurePasswords;
+			sourceTree = "<group>";
+		};
+		043375F11364606B00DE80F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04925B6B136BB5D800E1729B /* Padlock_small.png */,
+				04870167136599B80071C1E3 /* SecurePasswords.zip */,
+				043375F21364606B00DE80F7 /* SecurePasswords-Info.plist */,
+				043375F31364606B00DE80F7 /* InfoPlist.strings */,
+				043375F61364606B00DE80F7 /* SecurePasswords-Prefix.pch */,
+				043375F71364606B00DE80F7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04870152136596DB0071C1E3 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				04870153136596DB0071C1E3 /* minizip */,
+				0487015D136596DB0071C1E3 /* ZipArchive.h */,
+				0487015E136596DB0071C1E3 /* ZipArchive.mm */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		04870153136596DB0071C1E3 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				04870154136596DB0071C1E3 /* crypt.h */,
+				04870155136596DB0071C1E3 /* ioapi.c */,
+				04870156136596DB0071C1E3 /* ioapi.h */,
+				04870157136596DB0071C1E3 /* mztools.c */,
+				04870158136596DB0071C1E3 /* mztools.h */,
+				04870159136596DB0071C1E3 /* unzip.c */,
+				0487015A136596DB0071C1E3 /* unzip.h */,
+				0487015B136596DB0071C1E3 /* zip.c */,
+				0487015C136596DB0071C1E3 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		04C4053613666E9700E63E4D /* XMLEncoding */ = {
+			isa = PBXGroup;
+			children = (
+				04C4053713666E9700E63E4D /* NSMutableString+XMLEncoding.h */,
+				04C4053813666E9700E63E4D /* NSMutableString+XMLEncoding.m */,
+				04C4053913666E9700E63E4D /* NSString+XMLEncoding.h */,
+				04C4053A13666E9700E63E4D /* NSString+XMLEncoding.m */,
+				04C4053B13666E9700E63E4D /* NSString_XMLEncodingAppDelegate.h */,
+				04C4053C13666E9700E63E4D /* NSString_XMLEncodingAppDelegate.m */,
+			);
+			path = XMLEncoding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043375E51364606B00DE80F7 /* SecurePasswords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043376071364606B00DE80F7 /* Build configuration list for PBXNativeTarget "SecurePasswords" */;
+			buildPhases = (
+				043375E21364606B00DE80F7 /* Sources */,
+				043375E31364606B00DE80F7 /* Frameworks */,
+				043375E41364606B00DE80F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecurePasswords;
+			productName = SecurePasswords;
+			productReference = 043375E61364606B00DE80F7 /* SecurePasswords.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043375DD1364606A00DE80F7 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 043375E01364606A00DE80F7 /* Build configuration list for PBXProject "SecurePasswords" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 043375DB1364606A00DE80F7;
+			productRefGroup = 043375E71364606B00DE80F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043375E51364606B00DE80F7 /* SecurePasswords */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043375E41364606B00DE80F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043375F51364606B00DE80F7 /* InfoPlist.strings in Resources */,
+				043375FE1364606B00DE80F7 /* MainWindow.xib in Resources */,
+				0433760E136460DB00DE80F7 /* MasterPasswordController.xib in Resources */,
+				0484C05B13655DA7002E9D39 /* SiteDetailViewController.xib in Resources */,
+				04870168136599B80071C1E3 /* SecurePasswords.zip in Resources */,
+				04925B6C136BB5D800E1729B /* Padlock_small.png in Resources */,
+				049276F313756DF4007F88C7 /* iTunesMetadata.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043375E21364606B00DE80F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043375F81364606B00DE80F7 /* main.m in Sources */,
+				043375FB1364606B00DE80F7 /* SecurePasswordsAppDelegate.m in Sources */,
+				043376011364606B00DE80F7 /* PasswordListController.m in Sources */,
+				0433760D136460DB00DE80F7 /* MasterPasswordController.m in Sources */,
+				0484C05613655BD4002E9D39 /* Site.m in Sources */,
+				0484C05A13655DA7002E9D39 /* SiteDetailViewController.m in Sources */,
+				0487015F136596DB0071C1E3 /* ioapi.c in Sources */,
+				04870160136596DB0071C1E3 /* mztools.c in Sources */,
+				04870161136596DB0071C1E3 /* unzip.c in Sources */,
+				04870162136596DB0071C1E3 /* zip.c in Sources */,
+				04870163136596DB0071C1E3 /* ZipArchive.mm in Sources */,
+				04C4053D13666E9700E63E4D /* NSMutableString+XMLEncoding.m in Sources */,
+				04C4053E13666E9700E63E4D /* NSString+XMLEncoding.m in Sources */,
+				04C4053F13666E9700E63E4D /* NSString_XMLEncodingAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		043375F31364606B00DE80F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043375F41364606B00DE80F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		043375FC1364606B00DE80F7 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043375FD1364606B00DE80F7 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043376051364606B00DE80F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		043376061364606B00DE80F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		043376081364606B00DE80F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecurePasswords/SecurePasswords-Prefix.pch";
+				INFOPLIST_FILE = "SecurePasswords/SecurePasswords-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		043376091364606B00DE80F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecurePasswords/SecurePasswords-Prefix.pch";
+				INFOPLIST_FILE = "SecurePasswords/SecurePasswords-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043375E01364606A00DE80F7 /* Build configuration list for PBXProject "SecurePasswords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043376051364606B00DE80F7 /* Debug */,
+				043376061364606B00DE80F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043376071364606B00DE80F7 /* Build configuration list for PBXNativeTarget "SecurePasswords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043376081364606B00DE80F7 /* Debug */,
+				043376091364606B00DE80F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043375DD1364606A00DE80F7 /* Project object */;
+}
